@@ -14,8 +14,6 @@ h1 h3 p {
     
 }
 
-
-
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .imgGap {
         padding: 50px;
