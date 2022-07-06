@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -16,11 +17,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <title>hackathon</title>
-  
+
 </head>
 
 <body>
-  
+
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
       <a class="navbar-brand" href="#">
@@ -40,7 +41,7 @@
         </div>
       </div>
     </nav>
-    
+
   </header>
   <!-- bubble Section -->
   <section>
@@ -51,7 +52,15 @@
         <span class="text-success">Grow.</span>
       </h1>
     </div>
-    <img class="img-fluid mx-auto d-block" src="./assets/Illustrations.png" alt="Responsive image">
+    <div class="Container" style="height: 300px; max-width: 100%;">
+      <div class="position-absolute top-0 start-0" ></div>
+      <div class="position-absolute top-0 end-0" style="position: right;" > <img src="./assets/Ellipse 10.png"></div>
+     <div class="position-absolute top-50 start-50"><img  src="./assets/Group 22.png"></div> 
+      <div class="position-absolute bottom-50 end-50" ><img src="./assets/Ellipse 12.png"> </div> 
+      <img class="position-absolute bottom-0 start-0" src="./assets/Ellipse 4.png">
+      <img class="position-absolute bottom-0 end-0" src="./assets/Ellipse 7.png">
+    </div>
+    <!-- <img class="img-fluid mx-auto d-block" src="./assets/Illustrations.png" alt="Responsive image"> -->
   </section>
   <!-- Text Image Section -->
   <section>
@@ -64,10 +73,10 @@
         ut! Blanditiis eum quaerat fugiat dolorem corrupti, qui itaque hic fuga? Ea, iusto.
       </p>
     </div>
-    <img class="img-responsive lg-float-right" src="./assets/image1.png"  style="max-width: 70%;">
-<div class="imgGap " ></div>
-<div class="imgGap " ></div>
-<div class="imgGap " ></div>
+    <img class="img-responsive lg-float-right" src="./assets/image1.png" style="max-width: 70%;">
+    <div class="imgGap "></div>
+    <div class="imgGap "></div>
+    <div class="imgGap "></div>
 
   </section>
   <!-- Community Talents Section -->
@@ -147,12 +156,12 @@
   </section>
   <!-- Organizerrs -->
   <section class="unknowColor pt-4">
-    
-      <h3 class="text-center">Community Talent</h3>
 
-  
-      
-      <div class="row col-auto m-4 p-4 d-flex justify-content-center" >
+    <h3 class="text-center">Community Talent</h3>
+
+
+
+    <div class="row col-auto m-4 p-4 d-flex justify-content-center">
       <div class="Container rounded-2 bg-light p-3 m-3">
         <img src="./assets/Rectangle 3 (1).png" alt="" sizes="" class="rounded-circle">
         <h5 class="text-center">David Okoroafor</h5>
@@ -217,35 +226,81 @@
 
     <div class="d-flex align-items-end justify-content-right mt-5">
       <div class=" bg-success rounded-circle m-5" style="width: 50px; height: 50px; position: absolute;"></div>
-    
+
     </div>
     <div class="d-flex align-items-end justify-content-end mt-5" id="redCircle">
-      <div class="d-flex align-items-center justify-content-center bg-danger rounded-circle m-5 " style="width: 140px; height: 100px; position: absolute;"></div>
+      <div class="d-flex align-items-center justify-content-center bg-danger rounded-circle m-5 "
+        style="width: 140px; height: 100px; position: absolute;"></div>
 
     </div>
 
   </section>
 
   <!-- <section>
-    <nav>
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+
+    <div class="container justify-content-center align-items-center">
+      <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+              <div class="tab" role="tabpanel">
+                  <!-- Nav tabs -->
+                  <ul class="nav justify-content-center nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Section 1</a></li>
+                      <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Section 2</a></li>
+                      <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Section 3</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content tabs">
+                      <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                          <h3>Section 1</h3>
+                          <p>
+                        
+                          </p>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="Section2">
+                          <h3>Section 2</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id,
+                              rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus
+                              scelerisque.
+                          </p>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="Section3">
+                          <h3>Section 3</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id,
+                              rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus
+                              scelerisque.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </nav>
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">First</div>
-      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Second</div>
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Third</div>
-    </div>
+
+
+
+
+
   </section> -->
 
-  <!-- <section>
+  <section>
     <div class="pt-2 pb-2" style="background-image: url('./assets/1656538162271.png');">
+      
+      <img src="./assets/Frame 423 (1).png" alt="Responsive image"  class="img-fluid " style="position: relative;">
+        <div class=" d-flex align-items-center vertical-center justify-content-center align-middle" style="position: relative; height: 100%; vertical-align: middle;" >
+          <div class="mb-5 p-5 bg-light" style="position: absolute; bottom: 0;">
+            <h4 class="text-center">Sign to our newsletter</h4>
+            <p class="text-center">Get weekly updates on the tech news and events in our community. Don't miss a thing</p>
+            <button type="button" class="btn btn-primary btn-lg btn-block">
+              Sign up now  <i class="ml-5 fa fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      
+      
 
     </div>
-  </section> -->
+  </section>
 
   <footer class="d-flex justify-content-around ">
     <div class="d-flex">
@@ -254,28 +309,29 @@
       </a>
       <p class="text-primary mt-3 ml-1 mb-1"> Copyright&COPY;2022</p>
     </div>
-    
+
     <ul class="nav">
       <li class="mt-3 ml-2"><a class="" href="#">
           <i class="fab fa-twitter" style="font-size: 1.59em;"></i>
         </a></li>
-        <li class="mt-3 ml-2"><a class="" href="#">
+      <li class="mt-3 ml-2"><a class="" href="#">
           <i class="fab fa-facebook" style="font-size: 1.59em;"></i>
         </a></li>
       <li class="mt-3 ml-2"><a class="" href="#">
           <i class="fab fa-instagram" style="font-size: 1.59em;"></i>
         </a></li>
-      </ul>
-    </footer>
-  
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    </ul>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
