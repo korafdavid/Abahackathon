@@ -19,7 +19,41 @@ h1 h3 p {
         padding: 50px;
         margin: 100px;
     }
+
 }
+
+@media only screen and (max-width: 600px) {
+    .resizesmall {
+        max-width: 70;
+    }
+    .resizebig {
+        max-width: 100;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .resizesmall {
+        max-width: 200;
+        margin: 150px;
+    }
+    .resizebig {
+        max-width: 300;
+        margin: 30px;
+        animation: bigScreenAnimation 10s timing-function 2s infinite alternate-reverse fill-mode;
+    }
+  }
+
+  @keyframes smallScreenAnimation {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+  @keyframes bigScreenAnimation {
+    from {max-width: 300;}
+    to {max-width: 240;}
+  }
+
+
 
 #redCircircle {
     position: absolute;
